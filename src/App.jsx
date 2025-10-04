@@ -6,6 +6,7 @@ import List from './component/List'
 import Home from './component/Home'
 import Stat from './component/Stat'
 import Footer from './component/Footer'
+import Button from './component/Button'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,8 @@ function App() {
   return (
     <>
     <Home/>
-      
+    <Button/>
+      <div className='  mx-auto '>
 <h1>Hello I am Nazmul!</h1>
 {/* Open the modal using document.getElementById('ID').showModal() method */}
 <button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}>open modal</button>
@@ -29,6 +31,7 @@ function App() {
     </div>
   </div>
 </dialog>
+</div>
 <List/>
 <Stat/>
 <Footer/>
